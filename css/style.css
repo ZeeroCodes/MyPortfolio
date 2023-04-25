@@ -1,0 +1,23 @@
+/* Global styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+/* Wrapper styles */
+.wrapper {
+	display: flex;
+}
+
+/* Navigation styles */
+nav {
+	background-color: #333;
+	color: #fff;
+	flex-basis: 20%;
+	padding: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
