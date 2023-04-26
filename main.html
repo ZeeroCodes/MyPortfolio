@@ -4,8 +4,7 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<div class="wrapper">
+<body class="background">
 		<nav class="menu">
 			<ul>
 				<li><a href="#home">Home</a></li>
@@ -19,9 +18,9 @@
 		<div class="content">
 			<img src="resources/images/Logo.png" alt="Logo" style="width: 10%;" id="home">
 			<div>
-				<h1>Home</h1>
+				<h1 class="texto-imagen titulo">Home</h1>
 				
-				<p>¡Hola y bienvenido/a a mi página personal!
+				<p class="parrafo">¡Hola y bienvenido/a a mi página personal!
 
 					En esta sección de inicio, te doy la bienvenida y te ofrezco un vistazo rápido de quién soy y qué hago.
 					
@@ -32,8 +31,8 @@
 					Si estás interesado/a en colaborar conmigo o tienes alguna pregunta, no dudes en ponerte en contacto a través de mi página de "Contacto". ¡Estoy ansioso/a por trabajar contigo!</p>
 			</div>
 			<div id="about-me">
-				<h1>About me</h1>
-				<p>¡Hola de nuevo! En esta sección de "Sobre mí" quiero compartir contigo un poco más sobre mi historia y mis intereses.
+				<h1 class="texto-imagen titulo">About me</h1>
+				<p class="parrafo">¡Hola de nuevo! En esta sección de "Sobre mí" quiero compartir contigo un poco más sobre mi historia y mis intereses.
 
 					Nací en [ciudad/país] y desde pequeño/a siempre me interesó [tu interés o pasatiempo]. A medida que fui creciendo, descubrí mi pasión por [tu profesión o especialización] y me dediqué a estudiar y trabajar en este campo.
 					
@@ -44,26 +43,70 @@
 					Si tienes alguna pregunta o quieres saber más sobre mí, no dudes en ponerte en contacto a través de mi página de "Contacto". ¡Espero saber de ti pronto!</p>
 			</div>
 			<div id="education">
-				<h1>My Education</h1>
-				<div>
-					<div class="seccion-izq">
-						<img src="resources/images/Education/Libro.png" alt="Libro" style="width: 20%;">
-					</div>
-					<div class="seccion-der">
-						<p>En esta sección de "Educación recibida", quiero compartir contigo mi trayectoria académica y los logros que he conseguido a lo largo de mi carrera.
-	
-							Me gradué en [tu institución educativa] con una licenciatura en [tu campo de estudio] en [año de graduación]. Durante mi carrera universitaria, tuve la oportunidad de [describe cualquier experiencia de aprendizaje única que hayas tenido, como pasantías, prácticas profesionales, etc.].
-							
-							Después de obtener mi título, decidí continuar mi educación y obtuve una maestría en [tu campo de estudio] en [año de graduación]. Durante mi posgrado, me especialicé en [tu especialización de posgrado] y tuve la oportunidad de [describe cualquier experiencia de aprendizaje única que hayas tenido durante tu posgrado].
-							
-							A lo largo de mi carrera académica, he recibido varios reconocimientos y logros, incluyendo [lista cualquier premio o reconocimiento que hayas recibido]. Estoy orgulloso/a de haber completado mi educación y siempre estoy buscando maneras de seguir aprendiendo y mejorando mis habilidades.
-							
-							Si estás interesado/a en conocer más sobre mi educación y experiencia académica, no dudes en ponerse en contacto a través de mi página de "Contacto". ¡Espero saber de ti pronto!</p>
-					
-					</div>
-					
+
+				<div class="contenedor-imagen">
+					<img class="imagen-izq" src="resources/images/Education/Libro.png" alt="Libro">
+					<h1 class="texto-imagen titulo">My Education</h1>
 				</div>
 				<div style="clear:both;"></div>
+
+					
+					<p class="parrafo">En esta sección de "Educación recibida", quiero compartir contigo mi trayectoria académica y los logros que he conseguido a lo largo de mi carrera.
+
+						Me gradué en [tu institución educativa] con una licenciatura en [tu campo de estudio] en [año de graduación]. Durante mi carrera universitaria, tuve la oportunidad de [describe cualquier experiencia de aprendizaje única que hayas tenido, como pasantías, prácticas profesionales, etc.].
+						
+						Después de obtener mi título, decidí continuar mi educación y obtuve una maestría en [tu campo de estudio] en [año de graduación]. Durante mi posgrado, me especialicé en [tu especialización de posgrado] y tuve la oportunidad de [describe cualquier experiencia de aprendizaje única que hayas tenido durante tu posgrado].
+						
+						A lo largo de mi carrera académica, he recibido varios reconocimientos y logros, incluyendo [lista cualquier premio o reconocimiento que hayas recibido]. Estoy orgulloso/a de haber completado mi educación y siempre estoy buscando maneras de seguir aprendiendo y mejorando mis habilidades.
+						
+						Si estás interesado/a en conocer más sobre mi educación y experiencia académica, no dudes en ponerse en contacto a través de mi página de "Contacto". ¡Espero saber de ti pronto!</p>
+					
+					<div>
+
+						<h2 class="subtitulo tabulado">ESTUDIOS UNIVERSITARIOS</h2>
+
+							<div class="contenedor-imagen">
+								<img class="imagen-izq" src="resources/images/Education/Logo_universidad.png" alt="Logo_universidad">
+								<div class="texto-imagen">
+									<h3 class="subtitulo2">Universidad de las Artes Digitales "TechArt"</h3>
+									<p class="parrafo2">Grado en ingeniería informática 2018-2022</p>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+					</div>
+
+					<h2 class="subtitulo tabulado">CURSOS Y CERTIFICADOS</h2>
+
+						<div class="contenedor-imagen">
+							<img class="imagen-izq-menor" src="resources/images/Education/Pergamino.png" alt="Pergamino">
+							<div class="texto-imagen">
+								<h3 class="subtitulo2">Complete Python Bootcamp: From Zero to Hero in Python</h3>
+								<p class="parrafo2">Masteriza tus conocimientos de Python</p>
+							</div>
+						</div>
+						<div style="clear:both;"></div>
+
+						<div class="contenedor-imagen">
+							<img class="imagen-izq-menor" src="resources/images/Education/Pergamino.png" alt="Pergamino">
+							<div class="texto-imagen">
+								<h3 class="subtitulo2">Machine Learning A-Z™: Hands-On Python & R In Data Science</h3>
+								<p class="parrafo2">Enseña a utilizar Python para Machine learning</p>
+							</div>
+						</div>
+						<div style="clear:both;"></div>
+
+					<h2 class="subtitulo tabulado">NIVEL DE IDIOMAS</h2>
+					<div class="contenedor-imagen">
+						<img class="imagen-izq-menor" src="resources/images/Education/Pergamino.png" alt="Pergamino">
+						<div class="texto-imagen">
+							<h3 class="subtitulo2">Cambridge B2</h3>
+							<p class="parrafo2">Certificado que asegura mis conocimientos en inglés del nivel B2</p>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+
+
+				
 			</div>
 			<div id="experience">
 				<h1>My Work Experience</h1>
@@ -98,7 +141,6 @@
 					Estoy emocionado/a de hablar contigo y espero poder colaborar juntos en algún proyecto. Si tienes alguna pregunta o comentario, no dudes en ponerse en contacto. ¡Espero saber de ti pronto!</p>
 			</div>
 		</div>
-	</div>
 	<script src="javascript/script.js"></script>
 </body>
 </html>
