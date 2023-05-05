@@ -79,30 +79,28 @@ td {
   padding: 20px;
 }
 
-.ventana-emergente p {
-  width: 60%;
-  height: 100%;
+.popup-description p {
   padding: 20px;
   font-size: 20px;
   color: #000000;
 }
 
 .popup-description h1{
-  width: 60%;
-  height: 100%;
   padding: 20px;
-  font-size: 20px;
+  font-size: 50px;
   color: #000000;
 }
 
-.popup-description .popup-image-container {
+.popup-image-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  height: 30%;
+  position: fixed;
+  bottom: 0;
 }
 
-.popup-description .popup-image-container img {
+.popup-image-container img {
   width: 30%;
   height: auto;
 }

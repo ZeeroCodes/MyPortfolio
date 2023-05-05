@@ -14,9 +14,17 @@ const proyecto2 = {
     images: ['resources/images/Projects/Tuerca.png', 'resources/images/Projects/Tuerca.png', 'resources/images/Projects/Tuerca.png']
 };
 
+
+
+
+
 const imageContainers = document.querySelectorAll('.image-container');
 var ventana = document.querySelector('.ventana-emergente');
 var dentro = false;
+
+
+
+
 
 imageContainers.forEach(container => {
   const img = container.querySelector('img');
@@ -35,16 +43,41 @@ imageContainers.forEach(container => {
   });
 });
 
-function abrirVentana(videoSrc, texto) {
-    
+
+
+
+
+function abrirVentana(nombre) {
+    disableScroll();
     var video = ventana.querySelector('video');
     var titulo = ventana.querySelector('h1');
     var descripcion = ventana.querySelector('p');
     var imagenes = ventana.querySelectorAll('img');
     
-
-    video.src = videoSrc;
-    descripcion.textContent = texto;
+    switch (nombre) {
+        case "proyecto1":
+            video.src = proyecto1.videosrc;
+            titulo.textContent = proyecto1.titulo;
+            descripcion.textContent = proyecto1.texto;
+            var index = 0;
+            imagenes.forEach(imagen =>{
+                imagen.src = proyecto1.images[index];
+                index += 1;
+            })
+            break;
+        case "proyecto2":
+            video.src = proyecto2.videosrc;
+            titulo.textContent = proyecto2.titulo;
+            descripcion.textContent = proyecto2.texto;
+            var index = 0;
+            imagenes.forEach(imagen =>{
+                imagen.src = proyecto2.images[index];
+                index += 1;
+            })
+            break;
+        default:
+            break;
+    }
     
     ventana.style.display = 'flex';
     video.play();
@@ -54,7 +87,7 @@ function abrirVentana(videoSrc, texto) {
 document.addEventListener('click', function(e) {
     if (dentro == false) {
         ventana.style.display = 'none';
-        video.pause();
+        enableScroll();
     }
 });
 
@@ -84,6 +117,19 @@ document.addEventListener('mousemove', function(event) {
     dentro = true;
   }
 });
+
+
+function disableScroll() {
+    // Establece el overflow de la página como hidden
+    document.body.style.overflow = "hidden";
+}
+  
+function enableScroll() {
+    // Establece el overflow de la página como visible
+    document.body.style.overflow = "visible";
+}
+  
+  
 
     
   
